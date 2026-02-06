@@ -1,9 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Static Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 20px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      width: 80%;
+      max-width: 600px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      background: #e5e7eb;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello from AWS Pipeline 🚀</h1>
+
+  <header>
+    <h1>🚀 My Static Website</h1>
+    <p>Deployed Automatically using AWS CodePipeline + S3</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Hello from AWS Pipeline 🎉</h2>
+      <p>
+        This website is hosted on <b>Amazon S3 Static Website Hosting</b>.
+        Every time I push code to GitHub, AWS automatically deploys it.
+      </p>
+
+      <h3>✅ Services Used</h3>
+      <ul style="text-align:left; display:inline-block;">
+        <li>GitHub (Source Code)</li>
+        <li>AWS CodePipeline (Automation)</li>
+        <li>AWS CodeBuild (Build Step)</li>
+        <li>Amazon S3 (Hosting)</li>
+      </ul>
+
+      <button onclick="alert('Hello! Your AWS pipeline is working perfectly 😄')">
+        Click Me
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 My Static Website | Deployed with AWS 🚀</p>
+  </footer>
+
 </body>
 </html>
